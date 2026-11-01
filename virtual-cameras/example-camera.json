@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "example-camera",
+  "vendor": "CameraEmulator",
+  "model": "VirtualGigE",
+  "serial": "CE000001",
+  "version": "1.0.0",
+  "manufacturerInfo": "Standard GigE Vision simulator",
+  "ip": "169.254.109.16",
+  "subnetMask": "255.255.0.0",
+  "gateway": "0.0.0.0",
+  "httpPort": 8000,
+  "gvspPort": 3957,
+  "width": 640,
+  "height": 480,
+  "pixelFormat": 17301505,
+  "packetSize": 1400,
+  "packetDelay": 0,
+  "heartbeatTimeoutMs": 3000,
+  "frameRate": 10,
+  "imagePath": "C:/CameraImages/example.bmp"
+}

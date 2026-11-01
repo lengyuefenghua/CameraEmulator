@@ -1,0 +1,43 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 25,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "windows-debug",
+      "displayName": "Windows Debug (MSVC + Qt 6.8.3)",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/.build/windows-debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_PREFIX_PATH": "G:/QT/6.8.3/msvc2022_64",
+        "CAMERA_BUILD_TESTS": "ON"
+      }
+    },
+    {
+      "name": "windows-release",
+      "displayName": "Windows Release (MSVC + Qt 6.8.3)",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/.build/windows-release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_PREFIX_PATH": "G:/QT/6.8.3/msvc2022_64",
+        "CAMERA_BUILD_TESTS": "OFF"
+      }
+    }
+  ],
+  "buildPresets": [
+    { "name": "windows-debug", "configurePreset": "windows-debug" },
+    { "name": "windows-release", "configurePreset": "windows-release" }
+  ],
+  "testPresets": [
+    {
+      "name": "windows-debug",
+      "configurePreset": "windows-debug",
+      "output": { "outputOnFailure": true }
+    }
+  ]
+}

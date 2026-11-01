@@ -1,0 +1,12 @@
+.build/
+.reference/
+.venv/
+.qt/
+.tools/
+*.user
+*.suo
+.vs/
+dist/
+nwintun/
+
+.dsh/lazy/
